@@ -17,7 +17,6 @@ require('./config/express')(app, tesla); // EXPRESS SETTINGS
 require('./app/routes/default')(app, tesla); // DEFAULT ROUTES
 
 
-// ADD SOCKET.IO
 if ( app.config.socket === true ) {
   app.io = require('socket.io').listen(server);
 }
